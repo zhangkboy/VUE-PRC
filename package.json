@@ -13,7 +13,6 @@
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
     }
   },
-
   "dependencies": {
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
