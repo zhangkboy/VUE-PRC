@@ -88,11 +88,11 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   //
   data() {
     return {
-      msg: " 第一天  ",
+      msg: ' 第一天  ',
     };
   },
   // props: {

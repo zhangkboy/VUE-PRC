@@ -40,18 +40,18 @@
 
 <script>
 export default {
-  name: "for2",
+  name: 'for2',
   data() {
     return {
       items: [
-        { message: "Foo" },
-        { message: "Bar" },
-        { message: "Foo1" },
-        { message: "Bar1" },
-        { message: "Foo2" },
-        { message: "Bar2" },
-        { message: "Foo3" },
-        { message: "Bar3" },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo1' },
+        { message: 'Bar1' },
+        { message: 'Foo2' },
+        { message: 'Bar2' },
+        { message: 'Foo3' },
+        { message: 'Bar3' },
       ],
       sets: [
         [1, 2, 3, 4, 5],
@@ -62,19 +62,11 @@ export default {
   components: {},
   computed: {},
   methods: {
-    even: function (numbers) {
-      return numbers.filter(function (number) {
-        return number % 2 === 0;
-      });
+    even(numbers) {
+      return numbers.filter((number) => number % 2 === 0);
     },
   },
 
-
-
-
-
-
-  
 };
 </script>
 

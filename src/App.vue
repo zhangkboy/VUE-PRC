@@ -31,12 +31,11 @@
       :title="myTitle"
       :likes="myLikes"
     ></component1> -->
-    <component2 v-for="post in posts" :key="post.id" :title="post.title" 
+    <component2 v-for="post in posts" :key="post.id" :title="post.title"
       v-bind:content="post.content"
       v-bind:publishedAt="post.publishedAt"
       v-bind:comments="post.comments">
   </component2>
-
 
     <component2 v-for="post in posts" :key="post.id" :post="post">
     </component2>
@@ -67,10 +66,10 @@
 // import system from "@/components/system.vue";
 // import form1 from "@/components/form1.vue";
 // import component1 from "@/components/component1.vue";
-import component2 from "@/components/component2.vue";
+import component2 from '@/components/component2.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     // HelloWorld,
     // AOne
@@ -87,28 +86,27 @@ export default {
     // system,
     // form1,
     // component1,
-    component2
-   
+    component2,
 
   },
   data() {
     return {
-      myValue: "",
-      myTitle: "a a a a",
+      myValue: '',
+      myTitle: 'a a a a',
       myLikes: 0,
       posts: [
         { id: 1, title: 'My journey with Vue', content: 'content1' },
         { id: 2, title: 'Blogging with Vue', content: 'content2' },
-        { id: 3, title: 'Why Vue is so fun', content: 'content3' }
+        { id: 3, title: 'Why Vue is so fun', content: 'content3' },
       ],
-      postFontSize: 1
+      postFontSize: 1,
     };
   },
   methods: {
     vChange(v1, v2, v3) {
-      console.log("aa" + v1);
-      console.log("bb" + v2);
-      console.log("cc" + v3);
+      console.log(`aa${v1}`);
+      console.log(`bb${v2}`);
+      console.log(`cc${v3}`);
       this.myValue = v1;
       // this.myTitle = v2;
       // this.myLikes = v3;

@@ -37,14 +37,14 @@
 
 <script>
 export default {
-  name: "if1",
+  name: 'if1',
   data() {
     return {
       awesome: false,
-      loginType: "",
-      type: "",
+      loginType: '',
+      type: '',
       loginType2: 'username',
-      ok: true
+      ok: true,
     };
   },
   components: {},

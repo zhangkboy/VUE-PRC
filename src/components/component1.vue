@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "component1",
+  name: 'component1',
   // 单向数据流
   // 所有的 prop 都使得其父子 prop 之间形成了一个单向下行绑定：父级 prop 的更新会向下流动到子组件中，
   // 但是反过来则不行。这样会防止从子组件意外变更父级组件的状态，从而导致你的应用的数据流向难以理解。
@@ -73,7 +73,7 @@ export default {
       console.log(e.target.value);
       // this.title = "watch";
       // this.likes = 999;
-      this.$emit("valueChanged", e.target.value, this.title, this.likes);
+      this.$emit('valueChanged', e.target.value, this.title, this.likes);
       // 通过.sync可以简化上面代码(组件内触发的事件名称以“update:myPropName”命名,
       // 父组件v-bind:value 加上.sync修饰符，即 v-bind:value.sync)
       // this.$emit("update:value", e.target.value);

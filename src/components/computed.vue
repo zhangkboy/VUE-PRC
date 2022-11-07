@@ -14,11 +14,11 @@
 
 <script>
 export default {
-  name: "compute",
+  name: 'compute',
   data() {
     return {
-        message: "HelloWorld"
-    }
+      message: 'HelloWorld',
+    };
   },
   computed: {
     // 计算属性的 getter
@@ -28,17 +28,17 @@ export default {
     //     }
     // }
     reversedMessage() {
-        // `this` 指向 vm 实例
-        return Date.now();
-        //return this.message.split('').reverse().join('')
-    }
+      // `this` 指向 vm 实例
+      return Date.now();
+      // return this.message.split('').reverse().join('')
+    },
   },
-    methods: {
-        reversedMessage1: function () {
-        return this.message.split('').reverse().join('')
-        }
-    }
-}
+  methods: {
+    reversedMessage1() {
+      return this.message.split('').reverse().join('');
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

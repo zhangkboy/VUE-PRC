@@ -39,7 +39,7 @@ export default {
               vm.answer = _.capitalize(response.data.answer)
           })
           .catch(err => {
-              console.error(err); 
+              console.error(err);
               vm.answer = 'Error! Could not reach the API. ' + error
           })
       }

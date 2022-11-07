@@ -7,13 +7,13 @@
 
 <script>
 export default {
-  name: "watch",
+  name: 'watch',
   data() {
     return {
-        firstName: 'Foo',
-        lastName: 'Bar',
-        // fullName: 'Foo Bar'
-    }
+      firstName: 'Foo',
+      lastName: 'Bar',
+      // fullName: 'Foo Bar'
+    };
   },
   components: {
 
@@ -24,33 +24,33 @@ export default {
     // }
 
     fullName: {
-        // getter
-        get: function () {
-            return this.firstName + ' ' + this.lastName
-        },
-        // setter
-        set: function (newValue) {
-            var names = newValue.split(' ')
-            this.firstName = names[0]
-            // this.firstName = names[0]
-            this.lastName = names[names.length - 1]
-            // this.lastName = names[names.length - 1]
-    }
-    }
+      // getter
+      get() {
+        return `${this.firstName} ${this.lastName}`;
+      },
+      // setter
+      set(newValue) {
+        const names = newValue.split(' ');
+        this.firstName = names[0];
+        // this.firstName = names[0]
+        this.lastName = names[names.length - 1];
+        // this.lastName = names[names.length - 1]
+      },
+    },
   },
   methods: {
-        aaa() {
-            this.fullName = 'KC WL'
-        //   this.firstName = 'KC'
-      }
+    aaa() {
+      this.fullName = 'KC WL';
+      //   this.firstName = 'KC'
+    },
   },
   watch: {
-      firstName(v) {
-        this.fullName = v + ' ' + this.lastName
-      },
-      lastName(v) {        
-        this.fullName = this.firstName + ' ' + v
-      }
+    firstName(v) {
+      this.fullName = `${v} ${this.lastName}`;
+    },
+    lastName(v) {
+      this.fullName = `${this.firstName} ${v}`;
+    },
 
     // firstName: function (val) {
     //   this.fullName = val + ' ' + this.lastName
@@ -58,8 +58,8 @@ export default {
     // lastName: function (val) {
     //   this.fullName = this.firstName + ' ' + val
     // }
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>

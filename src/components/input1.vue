@@ -93,15 +93,15 @@
 
 <script>
 export default {
-  name: "input1",
+  name: 'input1',
   data() {
     return {
-      message: "",
+      message: '',
       checked: true,
       checkedNames: [],
-      picked: "",
-      msg: "",
-      age: "",
+      picked: '',
+      msg: '',
+      age: '',
       selected: [],
     };
   },

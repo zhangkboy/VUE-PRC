@@ -30,57 +30,50 @@
         <li v-for="n in even(set)" :key="n" >{{ n }}</li>
     </ul>
 
-
   </div>
 </template>
 
 <script>
 export default {
-  name: "component_name",
+  name: 'component_name',
   data() {
     return {
-      parentMessage: "Parent",
+      parentMessage: 'Parent',
       items: [
-        { message: "Foo" },
-        { message: "Bar" },
-        { message: "Foo1" },
-        { message: "Bar1" },
-        { message: "Foo2" },
-        { message: "Bar2" },
-        { message: "Foo3" },
-        { message: "Bar3" },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo1' },
+        { message: 'Bar1' },
+        { message: 'Foo2' },
+        { message: 'Bar2' },
+        { message: 'Foo3' },
+        { message: 'Bar3' },
       ],
       object: {
-        title: "How to do lists in Vue",
-        author: "Jane Doe",
-        publishedAt: "2016-04-10",
+        title: 'How to do lists in Vue',
+        author: 'Jane Doe',
+        publishedAt: '2016-04-10',
       },
-      sets: [[ 1, 2, 3, 4, 5 ], [6, 7, 8, 9, 10]]
+      sets: [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],
 
     };
   },
   components: {},
   computed: {
-      evenNumbers: function() {
-          return this.items.filter(function (item) {
-            return item.message.match(/Foo/)
-        })
-      }
+    evenNumbers() {
+      return this.items.filter((item) => item.message.match(/Foo/));
+    },
   },
   methods: {
     aaa() {
-      this.items.push({ message: "Baz" });
+      this.items.push({ message: 'Baz' });
     },
     aaa1() {
     //   this.items.pop();
-      this.items = this.items.filter(function (item) {
-        return item.message.match(/Foo/);
-      });
+      this.items = this.items.filter((item) => item.message.match(/Foo/));
     },
-    even: function (numbers) {
-        return numbers.filter(function (number) {
-            return number % 2 === 1
-        })
+    even(numbers) {
+      return numbers.filter((number) => number % 2 === 1);
     },
 
   },

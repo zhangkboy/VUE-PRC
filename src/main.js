@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 // import _ from 'lodash'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 // Vue.use(plugin);
 // 定义一个名为 button-counter 的新组件
 // Vue.component("button-counter", {
@@ -17,7 +17,6 @@ Vue.config.productionTip = false
 // })
 
 // const Feature = Vue.component('component1',component1);
-
 
 // Vue.component('todo-item', {
 //   template: '\
@@ -60,10 +59,6 @@ Vue.config.productionTip = false
 //   }
 // })
 
-
-
-
-
 /*
 $mount 手动挂在，把生成的实例挂在在app这个标签上
 ES5:
@@ -82,9 +77,9 @@ render(h) {
 render: h => h(App)
 */
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App),
   // components: {
   //   // 'button-counter': button-counter,
   //   // 'component1': component1
   // }
-}).$mount('#app')
+}).$mount('#app');

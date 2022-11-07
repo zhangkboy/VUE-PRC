@@ -15,33 +15,33 @@
 
 <script>
 export default {
-  name: "classStyle",
+  name: 'classStyle',
   data() {
     return {
-        isActive: false,
-        hasError: false,
-        error: null,
-        // classObject: {
-        //     active: true,
-        //     'text-danger': false
-        // }
-    }
+      isActive: false,
+      hasError: false,
+      error: null,
+      // classObject: {
+      //     active: true,
+      //     'text-danger': false
+      // }
+    };
   },
   components: {
 
   },
   computed: {
-      classObject: function () {
-        return {
-            active: this.isActive && !this.error,
-            'text-danger': this.error && this.error.type === 'fatal'
-        }
-    }
+    classObject() {
+      return {
+        active: this.isActive && !this.error,
+        'text-danger': this.error && this.error.type === 'fatal',
+      };
+    },
   },
   methods: {
 
-  }
-}
+  },
+};
 </script>
 
 <style scoped>

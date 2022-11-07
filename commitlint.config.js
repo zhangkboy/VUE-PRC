@@ -27,7 +27,6 @@
  *第三位该rule的值。
  */
 
-
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
@@ -41,13 +40,13 @@ module.exports = {
       2, // type必须输入
       'always',
       [
-        'feat', // 新功能 
-        'fix', // 修复bug 
+        'feat', // 新功能
+        'fix', // 修复bug
         'style', // 修改格式，删除代码空格、缩进等
         'docs', // 文档、注释修改
         'refactor', // 代码重构，没有功能修改
-        'merge',  // 代码合并
-        'revert',  // 版本回滚
+        'merge', // 代码合并
+        'revert', // 版本回滚
         'chore', // 构建过程或辅助工具的变动
         'test',
         'perf',
@@ -58,7 +57,7 @@ module.exports = {
         'workflow',
         'types',
         'release',
-      ]
-    ]
-  }
-}
+      ],
+    ],
+  },
+};

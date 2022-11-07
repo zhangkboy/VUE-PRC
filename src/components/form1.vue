@@ -1,7 +1,7 @@
 <template>
   <div class="page">
-    <!-- v-model 在内部为不同的输入元素使用不同的 property 并抛出不同的事件： 
-    text 和 textarea 元素使用 value property 和 input 事件； 
+    <!-- v-model 在内部为不同的输入元素使用不同的 property 并抛出不同的事件：
+    text 和 textarea 元素使用 value property 和 input 事件；
     checkbox 和 radio 使用 checked property 和 change 事件；
     select 字段将 value 作为 prop 并将 change 作为事件。 -->
     <textarea v-model="message" placeholder="add multiple lines"> </textarea>
@@ -60,7 +60,7 @@
     </select>
     <span>Selected: {{ selected }}</span>
 
-    <!-- 在默认情况下，v-model 在每次 input 事件触发后将输入框的值与数据进行同步 
+    <!-- 在默认情况下，v-model 在每次 input 事件触发后将输入框的值与数据进行同步
     (除了上述输入法组合文字时)。你可以添加 lazy 修饰符，从而转为在 change 事件_之后_进行同步： -->
     <input v-model.lazy="msg" />
     <!-- 这通常很有用，因为即使在 type="number" 时，HTML 输入元素的值也总会返回字符串。如果这个值无法被 parseFloat() 解析，则会返回原始的值 -->
@@ -73,19 +73,19 @@
 
 <script>
 export default {
-  name: "component_name",
+  name: 'component_name',
   data() {
     return {
-      message: "",
+      message: '',
       checked: false,
-      checkedNames: [], //checkedNames: false
-      picked: "", //
-      //selected: [],
-      selected: "A",
+      checkedNames: [], // checkedNames: false
+      picked: '', //
+      // selected: [],
+      selected: 'A',
       options: [
-        { text: "One", value: "A" },
-        { text: "Two", value: "B" },
-        { text: "Three", value: "C" },
+        { text: 'One', value: 'A' },
+        { text: 'Two', value: 'B' },
+        { text: 'Three', value: 'C' },
       ],
     };
   },

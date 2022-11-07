@@ -8,12 +8,12 @@
 
 <script>
 export default {
-  name: "modifier",
-  data () {
+  name: 'modifier',
+  data() {
     return {
     };
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>

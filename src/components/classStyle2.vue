@@ -24,19 +24,19 @@
 
 <script>
 export default {
-  name: "component_name",
+  name: 'component_name',
   data() {
     return {
-        activeClass: 'active',
-        errorClass: 'text-danger',
-        isActive: true,
-        activeColor: 'red',
-        fontSize: 30,
-        styleObject: {
+      activeClass: 'active',
+      errorClass: 'text-danger',
+      isActive: true,
+      activeColor: 'red',
+      fontSize: 30,
+      styleObject: {
         color: 'red',
-        fontSize: '13px'
-        }
-    }
+        fontSize: '13px',
+      },
+    };
   },
   components: {
 
@@ -46,8 +46,8 @@ export default {
   },
   methods: {
 
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
