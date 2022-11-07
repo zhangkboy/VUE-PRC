@@ -31,7 +31,8 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'body-leading-blank': [2, 'always'],
+      'body-leading-blank': [2, 'always'],
+      'body-empty' : [2, 'never'],
     // 'footer-leading-blank': [1, 'always'],
     'header-max-length': [2, 'always', 108],
     'subject-empty': [2, 'never'],
