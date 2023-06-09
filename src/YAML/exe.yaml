@@ -1,0 +1,51 @@
+name: redis
+version: 5.6
+port: 6379
+stdin: true
+image: ~ # 或者null 
+# date and time formate ISO 8601
+date: 2022-11-11
+time: 2022-11-11T08:30:20+08:00
+
+singleLineString: >
+this is a very long  string
+and xxxxxxxxxxxx
+and xxxxxxxxxxxx
+# "this is a very long  string and xxxxxxxxxxxx and xxxxxxxxxxxx \n"
+
+singleLineString: >-
+  this is a very long  string
+  and xxxxxxxxxxxx
+  and xxxxxxxxxxxx
+# "this is a very long  string and xxxxxxxxxxxx and xxxxxxxxxxxx "
+
+multiLineString: |
+  this is a very long  string
+  and xxxxxxxxxxxx
+  and xxxxxxxxxxxx
+# "this is a very long  string \n and xxxxxxxxxxxx \n and xxxxxxxxxxxx \n "
+
+
+ports:
+  - 6379
+  - 6380
+ports: [6370, 6380]
+
+container:
+  name:mysql
+  port:123
+  version:6.0
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-stdin
+spec:
+  container:
+    name: mongodb
+    image: mongodb
+    stdin: false
+    port:
+    - containerPort: 27017
+    - host: 27017
+

@@ -1,8 +1,10 @@
-import Vue from 'vue';
-import App from './App.vue';
-// import _ from 'lodash'
+import Vue from 'vue'
+import App from './App.vue'
+import _ from 'lodash'
+// import store from './store'
+import router from './router'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 // Vue.use(plugin);
 // 定义一个名为 button-counter 的新组件
 // Vue.component("button-counter", {
@@ -77,9 +79,11 @@ render(h) {
 render: h => h(App)
 */
 new Vue({
-  render: (h) => h(App),
+  // router,
+  // store,
+  render: (h) => h(App)
   // components: {
   //   // 'button-counter': button-counter,
   //   // 'component1': component1
   // }
-}).$mount('#app');
+}).$mount('#app')

@@ -1,7 +1,7 @@
 <template>
   <div class="page">
-      <div id="demo">{{ fullName }}</div>
-      <p><button @click="aaa">click</button></p>
+    <div id="demo">{{ fullName }}</div>
+    <p><button @click="aaa">click</button></p>
   </div>
 </template>
 
@@ -11,13 +11,11 @@ export default {
   data() {
     return {
       firstName: 'Foo',
-      lastName: 'Bar',
+      lastName: 'Bar'
       // fullName: 'Foo Bar'
-    };
+    }
   },
-  components: {
-
-  },
+  components: {},
   computed: {
     //   fullName () {
     //     return this.firstName + ' ' + this.lastName
@@ -26,31 +24,31 @@ export default {
     fullName: {
       // getter
       get() {
-        return `${this.firstName} ${this.lastName}`;
+        return `${this.firstName} ${this.lastName}`
       },
       // setter
       set(newValue) {
-        const names = newValue.split(' ');
-        this.firstName = names[0];
+        const names = newValue.split(' ')
+        this.firstName = names[0]
         // this.firstName = names[0]
-        this.lastName = names[names.length - 1];
+        this.lastName = names[names.length - 1]
         // this.lastName = names[names.length - 1]
-      },
-    },
+      }
+    }
   },
   methods: {
     aaa() {
-      this.fullName = 'KC WL';
+      this.fullName = 'KC WL'
       //   this.firstName = 'KC'
-    },
+    }
   },
   watch: {
     firstName(v) {
-      this.fullName = `${v} ${this.lastName}`;
+      this.fullName = `${v} ${this.lastName}`
     },
     lastName(v) {
-      this.fullName = `${this.firstName} ${v}`;
-    },
+      this.fullName = `${this.firstName} ${v}`
+    }
 
     // firstName: function (val) {
     //   this.fullName = val + ' ' + this.lastName
@@ -58,9 +56,8 @@ export default {
     // lastName: function (val) {
     //   this.fullName = this.firstName + ' ' + val
     // }
-  },
-};
+  }
+}
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

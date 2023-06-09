@@ -5,33 +5,27 @@
   "scripts": {
     "prepare": "husky install",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lint:prettier":"npx prettier --write src/"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
     "sass-loader": "^12.6.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "3.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/travis-cli": "^17.2.0",
     "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.27.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-vue": "^9.7.0",
+    "acorn": "^8.8.2",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-router": "^4.1.6",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^4.1.0"
   },
   "browserslist": [
     "> 1%",

@@ -15,20 +15,19 @@
 export default {
   name: 'component_name',
   data() {
-    return {};
+    return {}
   },
   components: {},
   computed: {},
   methods: {
     onClick() {
-      alert(0);
+      alert(0)
     },
     onCtrlClick() {
-      alert(1);
-    },
-  },
-};
+      alert(1)
+    }
+  }
+}
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

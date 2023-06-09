@@ -12,11 +12,7 @@
     <label for="checkbox">{{ checked }}</label>
     <p></p>
     <p>
-      <label
-        >Date of Birth: <input type="text" name="DofB" v-model="message" />{{
-          message
-        }}</label
-      >
+      <label>Date of Birth: <input type="text" name="DofB" v-model="message" />{{ message }} </label>
     </p>
     <p>
       <input type="text" name="DofB" id="aaa" v-model="message" />
@@ -75,8 +71,7 @@
     <form>
       <input type="radio" name="sex" />男 <input type="radio" name="sex" />女
 
-      <input type="radio" name="subject" />HTML
-      <input type="radio" name="subject" />CSS
+      <input type="radio" name="subject" />HTML <input type="radio" name="subject" />CSS
     </form>
 
     <!-- 在“change”时而非“input”时更新 -->
@@ -93,7 +88,7 @@
 
 <script>
 export default {
-  name: 'input1',
+  name: 'input-1',
   data() {
     return {
       message: '',
@@ -112,4 +107,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
